@@ -1,3 +1,11 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
   test:
     name: Test on ${{ matrix.os }} (Python ${{ matrix.python-version }})
